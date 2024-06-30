@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://discussion-app-2.onrender.com';
+const API_URL = 'https://discussion-app-backend.onrender.com';
 
 const headers = () => ({
     'x-access-token': localStorage.getItem('token'),
