@@ -493,7 +493,9 @@ app.delete('/users/delete', verifyToken, (req, res) => {
         res.status(200).json({ message: 'Account deleted successfully!' });
     });
 });
-
+app.get('/', (req, res) => {
+    res.send('Welcome to the Discussion App API!');
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
